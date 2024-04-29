@@ -1,6 +1,6 @@
 <nav>
     <a href="/" aria-label="retour à la page d'accueil">
-        <img class="logo" src="/assets/images/logo.svg" alt="">
+        <img class="logo" src="./assets/images/logo.svg" alt="">
     </a>
     <ul>
         <li><a href="/#articles">Articles</a></li>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome on board</title>
-    <link rel="stylesheet" href="/assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
@@ -16,7 +16,7 @@
         <?php include '_navbar.php' ?>
         <div class="container">
             <h1>Welcome on board!</h1>
-            <img src="/assets/images/avatar.png" alt="">
+            <img src="./assets/images/avatar.png" alt="">
         </div>
     </header>
     <main>
@@ -24,17 +24,17 @@
             <h2 id="articles">Recent articles</h2>
             <div class="articles">
                 <article>
-                    <img src="/assets/images/responsive.png" alt="Responsive">
+                    <img src="./assets/images/responsive.png" alt="Responsive">
                     <h3>Responsive</h3>
                     <a href="#">Read</a>
                 </article>
                 <article>
-                    <img src="/assets/images/scalable.png" alt="Scalable">
+                    <img src="./assets/images/scalable.png" alt="Scalable">
                     <h3>Scalable</h3>
                     <a href="#">Read</a>
                 </article>
                 <article>
-                    <img src="/assets/images/inclusive.png" alt="Inclusive">
+                    <img src="./assets/images/inclusive.png" alt="Inclusive">
                     <h3>Inclusive</h3>
                     <a href="#">Read</a>
                 </article>
@@ -54,6 +54,30 @@
                 Excepturi dolore saepe, temporibus est voluptate necessitatibus molestiae sit minima eum quisquam et qui
                 quaerat nemo nam, consequuntur nisi alias in praesentium. Fuga amet esse nam doloremque ut nemo nostrum.
             </p>
+        </section>
+
+        <section class="container">
+            <h2>Get in touch</h2>
+            <p>Leave us a message and we will get back to you as soon as possible.</p>
+            <p>Fields marked with red wildcards * are required.</p>
+            <form action="./treatment.php" method="post">
+                <label for="name">Name <span class="red">*</span></label>
+                <input type="text" name="name" id="name">
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+
+                <select name="subject" id="subject">
+                    <option value="devis">Demander un devis</option>
+                    <option value="rdv">Prendre un rendez-vous</option>
+                    <option value="newsLetter">S'inscrire à la newsLetter</option>
+                </select>
+
+                <label for="message">Message</label>
+                <input type="text" name="message" id="message">
+
+                <input type="submit" value="SEND">
+            </form>
         </section>
         <?php //@todo Add a contact form  ?>
     </main>
