@@ -67,6 +67,7 @@
                 <label for="email">Email</label>
                 <input type="email" name="email" id="email">
 
+                <label for="subject">Objet : </label>
                 <select name="subject" id="subject">
                     <option value="devis">Demander un devis</option>
                     <option value="rdv">Prendre un rendez-vous</option>
@@ -76,7 +77,7 @@
                 <label for="message">Message</label>
                 <input type="text" name="message" id="message">
 
-                <input type="submit" value="SEND">
+                <input type="submit" value="SEND" id="button">
             </form>
         </section>
         <?php //@todo Add a contact form  ?>
